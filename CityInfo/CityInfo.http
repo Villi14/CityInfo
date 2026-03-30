@@ -16,9 +16,20 @@ GET {{CityInfo_HostAddress}}/api/cities/10
 Accept: application/json
 
 ###
-GET {{CityInfo_HostAddress}}/api/cities/1/pointofinterest
+GET {{CityInfo_HostAddress}}/api/cities/1/pointsofinterest
 Accept: application/json
 
 ###
-GET {{CityInfo_HostAddress}}/api/cities/1/pointofinterest/10
+GET {{CityInfo_HostAddress}}/api/cities/1/pointsofinterest/1
+Accept: application/json
+
+###
+POST {{CityInfo_HostAddress}}/api/cities/3/pointsofinterest
+Accept: application/json
+Content-Type: application/json
+{ "name": "Pere Lachaice", "description": "Famous cemetery where Jim Morrison are buried." }
+
+
+###
+GET {{CityInfo_HostAddress}}/api/cities/3/pointsofinterest/9
 Accept: application/json
